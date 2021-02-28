@@ -1,0 +1,75 @@
+@import './functions';
+@import './variables';
+
+@mixin shadow-light {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.02);
+}
+@mixin shadow-md {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin absolute-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top !important;
+  right: $right !important;
+  bottom: $bottom;
+  left: $left !important;
+}
+@mixin flex-x-between {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-y-between {
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-x-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin image-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex {
+  display: flex !important;
+}
+@mixin grid {
+  display: block !important;
+}
+@mixin container {
+  padding: 0.8rem 10%;
+}
+@mixin row($breakpoint) {
+  @include flex;
+  @media screen and #{inspect(breakpoint($breakpoint))} {
+    @include grid;
+  }
+}
+
+@mixin responsive($property, $value, $breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(breakpoint($breakpoint))} {
+      #{$property}: $value;
+    }
+  } @else {
+    @warn "No value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(breakpoint($breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "No value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

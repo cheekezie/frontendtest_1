@@ -1,0 +1,20 @@
+@import './functions';
+
+.bg-grey-100 {
+  background: color(grey-100);
+}
+
+.bg-grey-300 {
+  background: color(grey-300);
+}
+.bg-grey-400 {
+  background: color(grey-400);
+}
+
+.bg-black {
+  background: color(_black);
+}
+
+.text-grey {
+  color: color(grey-500);
+}

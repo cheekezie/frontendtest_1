@@ -1,0 +1,62 @@
+@import './functions';
+@import './mixin';
+
+.slider {
+  &.slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+  // slick container
+  .slick-list,
+  .slick-slide {
+    position: relative;
+    height: 70vh !important;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  ul.slick-dots {
+    top: 93%;
+    bottom: initial;
+  }
+  .slick-dots li {
+    counter-reset: css-counter 0;
+  }
+  .slick-dots li a {
+    @include image-size(20px, 20px);
+    @include flex-x-center;
+    border-radius: 50%;
+    background: color(light);
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
+    color: color(_black);
+  }
+}
+
+button {
+  &.slick-prev,
+  &.slick-next {
+    //background: color(light);
+    border-radius: 50%;
+    border: 1px solid color(_black);
+    z-index: 1;
+    &::before {
+      color: color(light);
+      opacity: 1;
+    }
+    &::after {
+      content: '';
+      @include absolute-position(-2px, -3px, -2px, -1px);
+      border: 1px solid color(light);
+      border-radius: 50%;
+    }
+  }
+  &.slick-prev {
+    @include absolute-position(95%, '', '', 2rem);
+  }
+  &.slick-next {
+    @include absolute-position(95%, 2rem, '', '');
+  }
+}

@@ -1,0 +1,54 @@
+$colorScheme: (
+  grey-100: #f5f5f5,
+  grey-200: #ccc,
+  grey-300: #d2d2d2,
+  grey-400: #a5a5a5,
+  grey-500: #404040,
+  light: #fff,
+  _black: #000000,
+  light-green: #d2f5d9,
+);
+
+$fontScheme: (
+  f_12: 12px,
+  f_14: 14px,
+  f_16: 16px,
+  f_18: 18px,
+  f_20: 20px,
+  f_24: 24px,
+  f_30: 30px,
+  f_32: 32px,
+  f_34: 34px,
+  f_28: 28px,
+  f_36: 36px,
+  f_40: 40px,
+  f_45: 45px,
+  f_48: 48px,
+);
+
+$weightScheme: (
+  normal: 400,
+  w_300: 300,
+  w_500: 500,
+  w_600: 600,
+  w_700: 700,
+  w_800: 800,
+);
+
+$breakpoints: (
+  phone: (
+    max-width: 575.98px,
+  ),
+  tablet: (
+    max-width: 767.98px,
+  ),
+  ipad: (
+    max-width: 1023.98px,
+  ),
+  ipad_pro: (
+    max-width: 1399.98px,
+  ),
+  laptop: (
+    max-width: 1400px,
+  ),
+) !default;

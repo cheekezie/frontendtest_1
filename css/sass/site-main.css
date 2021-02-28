@@ -1,0 +1,530 @@
+/********************/
+/*** SCSS PARTIALS ***/
+/********************/
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Maitree&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Hind', sans-serif;
+}
+
+p,
+li,
+a {
+  font-family: 'Maitree', serif;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font_18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-54 {
+  font-size: 54px;
+}
+
+.weight-700 {
+  font-weight: 700px;
+}
+
+.weight-600 {
+  font-weight: 600px;
+}
+
+.weight-800 {
+  font-weight: 800px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 0.1rem 1.2rem !important;
+  outline: none;
+  outline-width: 0;
+}
+
+input[type='text']:focus, input[type='text']:active,
+input[type='email']:focus,
+input[type='email']:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  outline-width: 0;
+}
+
+input[type='text'].border-none,
+input[type='email'].border-none,
+textarea.border-none {
+  border: none;
+}
+
+input[type='text'].border-grey,
+input[type='email'].border-grey,
+textarea.border-grey {
+  border: 1px solid #a5a5a5;
+}
+
+input[type='text'].border-default,
+input[type='email'].border-default,
+textarea.border-default {
+  border-top: 2px solid #a5a5a5;
+  border-left: 2px solid #a5a5a5;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+@media screen and (max-width: 767.98px) {
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+.bg-grey-100 {
+  background: #f5f5f5;
+}
+
+.bg-grey-300 {
+  background: #d2d2d2;
+}
+
+.bg-grey-400 {
+  background: #a5a5a5;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.text-grey {
+  color: #404040;
+}
+
+.slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider .slick-list,
+.slider .slick-slide {
+  position: relative;
+  height: 70vh !important;
+}
+
+.slider .slick-list img,
+.slider .slick-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slider ul.slick-dots {
+  top: 93%;
+  bottom: initial;
+}
+
+.slider .slick-dots li {
+  counter-reset: css-counter 0;
+}
+
+.slider .slick-dots li a {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+button.slick-prev, button.slick-next {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  z-index: 1;
+}
+
+button.slick-prev::before, button.slick-next::before {
+  color: #fff;
+  opacity: 1;
+}
+
+button.slick-prev::after, button.slick-next::after {
+  content: '';
+  position: absolute;
+  top: -2px !important;
+  right: -3px !important;
+  bottom: -2px;
+  left: -1px !important;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+button.slick-prev {
+  position: absolute;
+  top: 95% !important;
+  right: "" !important;
+  bottom: "";
+  left: 2rem !important;
+}
+
+button.slick-next {
+  position: absolute;
+  top: 95% !important;
+  right: 2rem !important;
+  bottom: "";
+  left: "" !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: #404040 !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+header {
+  padding: 0.8rem 10%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  width: 8rem;
+  height: auto;
+}
+
+header a,
+header a:link,
+header a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.slider .text {
+  position: absolute;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0;
+  left: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider h2 {
+  background: rgba(49, 47, 47, 0.66) !important;
+  padding: 0.7rem 2rem;
+}
+
+.menu {
+  padding: 3rem 2rem 2rem 2rem;
+  height: 70vh !important;
+  overflow: scroll;
+}
+
+.menu li a,
+.menu h6 {
+  color: #404040;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu h6 {
+  padding: 0.375rem 0;
+}
+
+.menu .selected {
+  background: #d2f5d9;
+  margin-left: 0.7rem;
+  padding: 0.375rem 0.5rem;
+}
+
+.cards {
+  padding: 0.8rem 10%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  .cards {
+    display: block !important;
+  }
+}
+
+.cards a {
+  width: calc(100% - 1rem);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.2rem 0;
+  margin-bottom: 0.8rem;
+  border-radius: 2px;
+}
+
+.cards .dynamic-callout {
+  width: 23%;
+  position: relative;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767.98px) {
+  .cards .dynamic-callout {
+    width: 100%;
+  }
+}
+
+.cards .dynamic-callout:hover, .cards .dynamic-callout:nth-child(3) {
+  background: none !important;
+}
+
+.cards .dynamic-callout:hover img, .cards .dynamic-callout:nth-child(3) img {
+  border-radius: 10px;
+}
+
+.cards .dynamic-callout:hover a, .cards .dynamic-callout:nth-child(3) a {
+  background: #fff !important;
+}
+
+.cards p {
+  margin-bottom: 0;
+}
+
+.cards .card-body {
+  padding: 1rem 0.6rem;
+}
+
+.cards .watermark {
+  position: absolute;
+  top: 0.4rem !important;
+  right: 0.4rem !important;
+  bottom: "";
+  left: "" !important;
+  width: 1rem;
+  height: auto;
+}
+
+/**********************/
+/*** GRID FRAMEWORK ***/
+/**********************/
+[class^='col-'] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-1of1 {
+  width: 100%;
+}
+
+.col-1of4 {
+  width: 25%;
+}
+
+.col-3of4 {
+  width: 75%;
+}
+
+.clear {
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.border-default {
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+.hide {
+  display: none !important;
+}
+
+.expanding-form {
+  margin-bottom: 4rem;
+}
+
+.expanding-form .checkbox_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.expanding-form .checkbox_field label {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.expanding-form .checkbox_field .checkbox__input input {
+  opacity: 0;
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+.expanding-form .checkbox_field .checkbox__control {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  padding: 0.2rem;
+  background: #f5f5f5;
+}
+
+.expanding-form .checkbox_field .checkbox__input {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'checkbox';
+}
+
+.expanding-form .checkbox_field .checkbox__input > * {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: checkbox;
+}
+
+.expanding-form .checkbox_field .checkbox__control svg {
+  -webkit-transition: -webkit-transform 0.1s ease-in 25ms;
+  transition: -webkit-transform 0.1s ease-in 25ms;
+  transition: transform 0.1s ease-in 25ms;
+  transition: transform 0.1s ease-in 25ms, -webkit-transform 0.1s ease-in 25ms;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.expanding-form .checkbox_field .checkbox__input input:checked + .checkbox__control svg {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=site-main.css.map */

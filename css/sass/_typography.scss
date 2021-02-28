@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Maitree&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Hind', sans-serif;
+}
+p,
+li,
+a {
+  font-family: 'Maitree', serif;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font_18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-54 {
+  font-size: 54px;
+}
+.weight-700 {
+  font-weight: 700px;
+}
+.weight-600 {
+  font-weight: 600px;
+}
+.weight-800 {
+  font-weight: 800px;
+}
+.line-height-30 {
+  line-height: 30px;
+}
+.line-height-20 {
+  line-height: 20px;
+}
+.text-underline {
+  text-decoration: underline;
+}

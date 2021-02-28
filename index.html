@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <title>Front End Dev Test</title>
+    <meta
+      name="description"
+      content="A test for the front end developer role"
+    />
+    <meta name="author" content="Swillis" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="http://www.senior.co.uk/AppImages/senior_logo_small.svg"
+    />
+
+    <link rel="stylesheet" href="css/sass/site-main.css" />
+
+    <!-- SLICK DNS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- FANCYBOX CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="bg-black">
+      <img
+        src="http://www.senior.co.uk/AppImages/senior_logo_small.svg"
+        alt="Header Logo"
+      />
+      <nav class="dynamic-callout">
+        <ul class="d-flex list-unstyled mb-0">
+          <li>
+            <a href="#" class="text-white font-14 text-uppercase">Home</a>
+          </li>
+          <li class="mx-4">
+            <a href="#" class="font-14 text-white text-uppercase">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-white font-14 text-uppercase">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner d-flex">
+      <div class="slider col-3of4 position-relative">
+        <div class="dynamic-callout position-relative">
+          <div class="text">
+            <h2
+              class="font-54 text-white font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Big Mountain
+            </h2>
+          </div>
+          <img src="img/banners/mountain1.jpg" alt="Big Mountain" />
+        </div>
+        <div class="dynamic-callout position-relative">
+          <div class="text">
+            <h2
+              class="font-54 text-white font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Snowy Mountain
+            </h2>
+          </div>
+          <img src="img/banners/mountain2.jpg" alt="Snowy Mountain" />
+        </div>
+      </div>
+
+      <div class="col-1of4 menu">
+        <h1
+          class="font-wight-cold font-32"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          A bunch of things
+        </h1>
+        <div class="super-nav dynamic-callout">
+          <nav>
+            <ul class="pl-0" data-aos="fade-up" data-aos-delay="100">
+              <li>
+                <h6>
+                  <a href="#">Colours</a>
+                </h6>
+                <ul>
+                  <li><a href="#">Red</a></li>
+                  <li><a href="#">Blue</a></li>
+                  <li><a href="#">Green</a></li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="selected">
+                  <a href="#">Shapes</a>
+                </h6>
+                <ul>
+                  <li><a href="#">Square</a></li>
+                  <li><a href="#">Triangle</a></li>
+                  <li><a href="#">Circle</a></li>
+                </ul>
+              </li>
+              <li>
+                <h6>
+                  <a href="#">Numbers</a>
+                </h6>
+                <ul>
+                  <li><a href="#">Fifteen</a></li>
+                  <li><a href="#">Sixteen</a></li>
+                  <li><a href="#">Seventeen</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards my-4 bg-grey-100">
+      <div class="dynamic-callout bg-white">
+        <div>
+          <a
+            href="img/puppies/puppy-cup.jpeg"
+            class="fancybox"
+            data-fancybox="img"
+          >
+            <img
+              src="img/puppies/puppy-cup.jpeg"
+              alt="Puppy in a cup"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            />
+          </a>
+          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <div class="card-body">
+            <h5
+              class="text-center font-weight-bold font-24"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Puppy in a cup
+            </h5>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Lorem ipsum dolor sit amet, eam modo altera ea, nec cu animal
+              latine partiendo. Populo scripserit repudiandae ad mei, ut per
+              commune neglegentur.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
+          >View</a
+        >
+      </div>
+      <div class="dynamic-callout bg-white">
+        <div>
+          <a
+            href="img/puppies/puppy-sleep.jpg"
+            class="fancybox"
+            data-fancybox="img"
+          >
+            <img
+              src="img/puppies/puppy-sleep.jpg"
+              alt="Sleeping Puppy"
+              data-aos="fade-up"
+              data-aos-delay="0"
+          /></a>
+          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <div class="card-body">
+            <h5
+              class="text-center font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Sleeping Puppy
+            </h5>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Lorem ipsum dolor sit amet, eam prompta bonorum et, quod menandri
+              his no.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
+          >View</a
+        >
+      </div>
+      <div class="dynamic-callout bg-white">
+        <div>
+          <a
+            href="img/puppies/puppy-fluffy.jpeg"
+            class="fancybox"
+            data-fancybox="img"
+          >
+            <img
+              src="img/puppies/puppy-fluffy.jpeg"
+              alt="Fluffy Puppy"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            />
+          </a>
+          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <div class="card-body">
+            <h5
+              class="text-center font-24 font-weight-bold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Fluffy Puppy
+            </h5>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Lorem ipsum dolor sit amet, et eam tantas ancillae, te luptatum
+              legendos est. Ad argumentum liberavisse sea, ex aliquid patrioque
+              pro.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
+          >View</a
+        >
+      </div>
+      <div class="dynamic-callout bg-white">
+        <div>
+          <a
+            href="img/puppies/puppy-stare.jpg"
+            class="fancybox"
+            data-fancybox="img"
+          >
+            <img
+              src="img/puppies/puppy-stare.jpg"
+              alt="Puppy Stare"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            />
+          </a>
+          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <div class="card-body">
+            <h5
+              class="text-center font-weight-bold font-24"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Puppy Stare
+            </h5>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Lorem ipsum dolor sit amet, eam prompta bonorum et, quod menandri
+              his no.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
+          >View</a
+        >
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <a
+        class="js-show-form button bg-grey-400 text-white px-2 py-1 text-uppercase cursor"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        >Expand Form</a
+      >
+    </div>
+    <div class="expanding-form" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="dynamic-callout col-md-7 m-auto">
+          <form>
+            <div class="form_field form-group row">
+              <label for="formName" class="col-sm-3 text-grey">Name:</label>
+              <input
+                class="col-sm-9 border-none bg-grey-100"
+                id="formName"
+                type="text"
+                name=""
+              />
+            </div>
+            <div class="form_field form-group row">
+              <label for="formEmail" class="col-sm-3 text-grey">Email:</label>
+              <input
+                class="col-sm-9 border-none bg-grey-100"
+                id="formEmail"
+                type="email"
+                name=""
+              />
+            </div>
+            <div class="form_field form-group row mb-4">
+              <label for="formText" class="col-sm-3 text-grey">Name:</label>
+              <textarea
+                class="col-sm-9 border-none bg-grey-100"
+                id="formText"
+                name=""
+              ></textarea>
+            </div>
+            <div class="form_field form-group row">
+              <label class="col-sm-3 text-grey">Please select:</label>
+              <div class="col-sm-9 px-0">
+                <label class="checkbox_field checkbox">
+                  <span class="checkbox__input">
+                    <input id="checkbox1" type="checkbox" name="" />
+                    <span class="checkbox__control">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <label for="checkbox1">Lorem ipsum 1</label>
+                </label>
+
+                <label class="checkbox_field checkbox">
+                  <span class="checkbox__input">
+                    <input id="checkbox2" type="checkbox" name="" />
+                    <span class="checkbox__control">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <label for="checkbox2">Lorem ipsum 2</label>
+                </label>
+
+                <label class="checkbox_field checkbox">
+                  <span class="checkbox__input">
+                    <input id="checkbox3" type="checkbox" name="" />
+                    <span class="checkbox__control">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <label for="checkbox3">Lorem ipsum 3</label>
+                </label>
+
+                <label class="checkbox_field checkbox">
+                  <span class="checkbox__input">
+                    <input id="checkbox4" type="checkbox" name="" />
+                    <span class="checkbox__control">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <label for="checkbox4">Lorem ipsum 4</label>
+                </label>
+
+                <label class="checkbox_field checkbox">
+                  <span class="checkbox__input">
+                    <input id="checkbox5" type="checkbox" name="" />
+                    <span class="checkbox__control">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="3"
+                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <label for="checkbox5">Lorem ipsum 5</label>
+                </label>
+              </div>
+            </div>
+            <div class="form_field">
+              <input
+                class="button bg-grey-400 text-white border-default px-2 py-1"
+                type="submit"
+                value="SUBMIT"
+                name=""
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row--search row--pad row my-4">
+      <div class="col-md-7 m-auto row px-0">
+        <div class="col-sm-9 ml-auto d-flex px-0">
+          <div class="basic-search">
+            <input
+              type="text"
+              class="border-grey text-grey"
+              name=""
+              placeholder="dsads"
+            />
+          </div>
+          <div class="detail-search ml-2">
+            <input
+              type="text"
+              class="border-default text-grey bg-grey-300"
+              name=""
+              placeholder="Detail Search"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- SLICK JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"
+    ></script>
+
+    <!-- BOOTSTRAP JS CDNs -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- FANCYBOX CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/site.js"></script>
+  </body>
+</html>

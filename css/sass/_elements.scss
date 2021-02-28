@@ -1,0 +1,41 @@
+@import './functions';
+@import './mixin';
+
+// Buttons
+button {
+  display: inline-block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// Input
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 0.1rem 1.2rem !important;
+  outline: none;
+  outline-width: 0;
+  // width: 100%;
+  &:focus,
+  &:active {
+    outline: none;
+    outline-width: 0;
+  }
+  &.border-none {
+    border: none;
+  }
+  &.border-grey {
+    border: 1px solid color(grey-400);
+  }
+  &.border-default {
+    border-top: 2px solid color(grey-400);
+    border-left: 2px solid color(grey-400);
+    border-right: 2px solid color(grey-200);
+    border-bottom: 2px solid color(grey-200);
+  }
+  //DISABLE AUTO ZOOM IN
+  @include media(tablet) {
+    font-size: 16px !important;
+  }
+}

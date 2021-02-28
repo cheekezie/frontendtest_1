@@ -1,0 +1,78 @@
+/*****************/
+/*** VARIABLES ***/
+/*****************/
+/********************/
+/*** SIMPLE RESET ***/
+/********************/
+body {
+  padding: 0;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hind', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #404040; }
+
+p, li, a {
+  font-family: 'Maitree', serif;
+  padding: 0;
+  margin: 0;
+  color: #777; }
+
+img {
+  max-width: 100%; }
+
+/**********************/
+/*** GRID FRAMEWORK ***/
+/**********************/
+[class^="col-"] {
+  display: inline-block;
+  vertical-align: top; }
+
+.col-1of1 {
+  width: 100%; }
+
+.col-1of4 {
+  width: 25%; }
+
+.col-3of4 {
+  width: 75%; }
+
+.clear {
+  display: block;
+  height: 0;
+  clear: both; }
+
+.site-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+/****************/
+/*** ELEMENTS ***/
+/****************/
+.button {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 16px;
+  background-color: #a5a5a5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Hind', sans-serif; }
+
+.expanding-form {
+  display: none; }
+
+header {
+  background-color: #000; }
+
+/******************/
+/*** RESPONSIVE ***/
+/******************/
+
+/*# sourceMappingURL=site-main.css.map */
