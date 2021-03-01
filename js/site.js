@@ -1,20 +1,30 @@
 $(document).ready(function(){
-	// Write any custom scripts here
+	// SLICK SLIDER
 	$('.slider').slick({
 		dots: true,
 		arrows:  true,
 		infinite: true,
 		speed: 300,
-		autoplay: true,
+		//autoplay: true,
 		slidesToShow: 1,
 		adaptiveHeight: true,
-		customPaging : (slider, i)=> {
+		customPaging : (slider, i) => {
 			return '<a>'+(i+1)+'</a>';
 			},
 	  });
-	  $(".js-show-form").click(()=>{
+
+	  // EXPAND FORM
+	  $(".js-show-form").click(() => {
 		$(".expanding-form").toggleClass("hide");
 	  });
+
+	  // SIDE MENU TOGGLE
+	  $(".menu-toggle").click(() => {
+		$(".mobile-menu").toggleClass("motion-in");
+	  });
+
+	  //LOADER EFFECT
+	  $(".loader").delay(200).fadeOut("slow");
 });
 
 AOS.init({

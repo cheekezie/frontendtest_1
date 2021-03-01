@@ -15,10 +15,10 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="http://www.senior.co.uk/AppImages/senior_logo_small.svg"
+      href="https://www.senior.co.uk/AppImages/senior_logo_small.svg"
     />
 
-    <link rel="stylesheet" href="css/sass/site-main.css" />
+    <link rel="stylesheet" href="css/site-main.css" />
 
     <!-- SLICK DNS -->
     <link
@@ -26,14 +26,23 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css"
     />
+
+    <!-- SLICK THEME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
     />
+
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
     <!-- FANCYBOX CDN -->
     <link
@@ -55,11 +64,14 @@
   <body>
     <header class="bg-black">
       <img
-        src="http://www.senior.co.uk/AppImages/senior_logo_small.svg"
+        src="https://www.senior.co.uk/AppImages/senior_logo_small.svg"
         alt="Header Logo"
       />
-      <nav class="dynamic-callout">
+      <nav class="dynamic-callout mobile-menu">
         <ul class="d-flex list-unstyled mb-0">
+          <li class="sidemenu-toggle text-white cursor menu-toggle">
+            <i class="fas fa-times text-wite font-24"></i>
+          </li>
           <li>
             <a href="#" class="text-white font-14 text-uppercase">Home</a>
           </li>
@@ -71,14 +83,15 @@
           </li>
         </ul>
       </nav>
+      <i class="fas fa-bars text-white cursor font-24 menu-toggle"></i>
     </header>
 
-    <div class="banner d-flex">
+    <div class="banner">
       <div class="slider col-3of4 position-relative">
-        <div class="dynamic-callout position-relative">
+        <div class="dynamic-callout position-relative slide-1">
           <div class="text">
             <h2
-              class="font-54 text-white font-weight-bold"
+              class="font-54 text-white font-weight-bold text-center"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -87,10 +100,10 @@
           </div>
           <img src="img/banners/mountain1.jpg" alt="Big Mountain" />
         </div>
-        <div class="dynamic-callout position-relative">
+        <div class="dynamic-callout position-relative slide-2">
           <div class="text">
             <h2
-              class="font-54 text-white font-weight-bold"
+              class="font-54 text-white font-weight-bold text-center"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -163,7 +176,13 @@
               data-aos-delay="0"
             />
           </a>
-          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <img
+            src="./img/icons/paw.svg"
+            class="watermark"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="0"
+          />
           <div class="card-body">
             <h5
               class="text-center font-weight-bold font-24"
@@ -196,10 +215,16 @@
               data-aos="fade-up"
               data-aos-delay="0"
           /></a>
-          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <img
+            src="./img/icons/paw.svg"
+            class="watermark"
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay="0"
+          />
           <div class="card-body">
             <h5
-              class="text-center font-weight-bold"
+              class="text-center font-weight-bold font-24"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -229,7 +254,13 @@
               data-aos-delay="0"
             />
           </a>
-          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <img
+            src="./img/icons/paw.svg"
+            class="watermark"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            alt=""
+          />
           <div class="card-body">
             <h5
               class="text-center font-24 font-weight-bold"
@@ -263,7 +294,13 @@
               data-aos-delay="0"
             />
           </a>
-          <img src="./img/icons/paw.svg" class="watermark" alt="" />
+          <img
+            src="./img/icons/paw.svg"
+            class="watermark"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            alt=""
+          />
           <div class="card-body">
             <h5
               class="text-center font-weight-bold font-24"
@@ -284,191 +321,203 @@
       </div>
     </div>
 
-    <div class="text-center mb-4">
-      <a
-        class="js-show-form button bg-grey-400 text-white px-2 py-1 text-uppercase cursor"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        >Expand Form</a
-      >
-    </div>
-    <div class="expanding-form" data-aos="fade-up" data-aos-delay="100">
-      <div class="row">
-        <div class="dynamic-callout col-md-7 m-auto">
-          <form>
-            <div class="form_field form-group row">
-              <label for="formName" class="col-sm-3 text-grey">Name:</label>
-              <input
-                class="col-sm-9 border-none bg-grey-100"
-                id="formName"
-                type="text"
-                name=""
-              />
-            </div>
-            <div class="form_field form-group row">
-              <label for="formEmail" class="col-sm-3 text-grey">Email:</label>
-              <input
-                class="col-sm-9 border-none bg-grey-100"
-                id="formEmail"
-                type="email"
-                name=""
-              />
-            </div>
-            <div class="form_field form-group row mb-4">
-              <label for="formText" class="col-sm-3 text-grey">Name:</label>
-              <textarea
-                class="col-sm-9 border-none bg-grey-100"
-                id="formText"
-                name=""
-              ></textarea>
-            </div>
-            <div class="form_field form-group row">
-              <label class="col-sm-3 text-grey">Please select:</label>
-              <div class="col-sm-9 px-0">
-                <label class="checkbox_field checkbox">
-                  <span class="checkbox__input">
-                    <input id="checkbox1" type="checkbox" name="" />
-                    <span class="checkbox__control">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <label for="checkbox1">Lorem ipsum 1</label>
-                </label>
-
-                <label class="checkbox_field checkbox">
-                  <span class="checkbox__input">
-                    <input id="checkbox2" type="checkbox" name="" />
-                    <span class="checkbox__control">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <label for="checkbox2">Lorem ipsum 2</label>
-                </label>
-
-                <label class="checkbox_field checkbox">
-                  <span class="checkbox__input">
-                    <input id="checkbox3" type="checkbox" name="" />
-                    <span class="checkbox__control">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <label for="checkbox3">Lorem ipsum 3</label>
-                </label>
-
-                <label class="checkbox_field checkbox">
-                  <span class="checkbox__input">
-                    <input id="checkbox4" type="checkbox" name="" />
-                    <span class="checkbox__control">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <label for="checkbox4">Lorem ipsum 4</label>
-                </label>
-
-                <label class="checkbox_field checkbox">
-                  <span class="checkbox__input">
-                    <input id="checkbox5" type="checkbox" name="" />
-                    <span class="checkbox__control">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                  <label for="checkbox5">Lorem ipsum 5</label>
-                </label>
+    <div class="form-container">
+      <div class="text-center mb-4">
+        <a
+          class="js-show-form button bg-grey-400 text-white px-2 py-1 text-uppercase cursor"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          >Expand Form</a
+        >
+      </div>
+      <div class="expanding-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="dynamic-callout col-md-7 m-auto">
+            <form>
+              <div class="form_field form-group row">
+                <label for="formName" class="col-sm-3 text-grey">Name:</label>
+                <input
+                  class="col-sm-9 border-none bg-grey-100"
+                  id="formName"
+                  type="text"
+                  name=""
+                />
               </div>
-            </div>
-            <div class="form_field">
+              <div class="form_field form-group row">
+                <label for="formEmail" class="col-sm-3 text-grey">Email:</label>
+                <input
+                  class="col-sm-9 border-none bg-grey-100"
+                  id="formEmail"
+                  type="email"
+                  name=""
+                />
+              </div>
+              <div class="form_field form-group row mb-4">
+                <label for="formText" class="col-sm-3 text-grey">Name:</label>
+                <textarea
+                  class="col-sm-9 border-none bg-grey-100"
+                  id="formText"
+                  name=""
+                ></textarea>
+              </div>
+              <div class="form_field form-group row">
+                <label class="col-sm-3 text-grey">Please select:</label>
+                <div class="col-sm-9 px-0">
+                  <label class="checkbox_field checkbox">
+                    <span class="checkbox__input">
+                      <input id="checkbox1" type="checkbox" name="" />
+                      <span class="checkbox__control">
+                        <svg
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <label for="checkbox1">Lorem ipsum 1</label>
+                  </label>
+
+                  <label class="checkbox_field checkbox">
+                    <span class="checkbox__input">
+                      <input id="checkbox2" type="checkbox" name="" />
+                      <span class="checkbox__control">
+                        <svg
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <label for="checkbox2">Lorem ipsum 2</label>
+                  </label>
+
+                  <label class="checkbox_field checkbox">
+                    <span class="checkbox__input">
+                      <input id="checkbox3" type="checkbox" name="" />
+                      <span class="checkbox__control">
+                        <svg
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <label for="checkbox3">Lorem ipsum 3</label>
+                  </label>
+
+                  <label class="checkbox_field checkbox">
+                    <span class="checkbox__input">
+                      <input id="checkbox4" type="checkbox" name="" />
+                      <span class="checkbox__control">
+                        <svg
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <label for="checkbox4">Lorem ipsum 4</label>
+                  </label>
+
+                  <label class="checkbox_field checkbox">
+                    <span class="checkbox__input">
+                      <input id="checkbox5" type="checkbox" name="" />
+                      <span class="checkbox__control">
+                        <svg
+                          xmlns="https://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="3"
+                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <label for="checkbox5">Lorem ipsum 5</label>
+                  </label>
+                </div>
+              </div>
+              <div class="form_field">
+                <input
+                  class="button bg-grey-400 text-white border-default px-2 py-1"
+                  type="submit"
+                  value="SUBMIT"
+                  name=""
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row--search row--pad row my-4">
+        <div class="col-md-7 m-auto row px-0">
+          <div class="col-sm-9 ml-auto d-flex px-0">
+            <div class="basic-search">
               <input
-                class="button bg-grey-400 text-white border-default px-2 py-1"
-                type="submit"
-                value="SUBMIT"
+                type="text"
+                class="border-grey text-grey"
                 name=""
+                placeholder="dsads"
               />
             </div>
-          </form>
+            <div class="detail-search ml-2">
+              <input
+                type="text"
+                class="border-default text-grey bg-grey-300"
+                name=""
+                placeholder="Detail Search"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="row--search row--pad row my-4">
-      <div class="col-md-7 m-auto row px-0">
-        <div class="col-sm-9 ml-auto d-flex px-0">
-          <div class="basic-search">
-            <input
-              type="text"
-              class="border-grey text-grey"
-              name=""
-              placeholder="dsads"
-            />
-          </div>
-          <div class="detail-search ml-2">
-            <input
-              type="text"
-              class="border-default text-grey bg-grey-300"
-              name=""
-              placeholder="Detail Search"
-            />
-          </div>
-        </div>
+    <div class="loader" id="appLoader">
+      <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
 

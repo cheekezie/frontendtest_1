@@ -45,6 +45,30 @@
 @mixin container {
   padding: 0.8rem 10%;
 }
+@mixin slide_menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999999;
+  left: 30%;
+  right: 0;
+  padding: 4rem 10%;
+  transform: translateX(150%);
+  background: rgba(0, 0, 0, 0.95) !important;
+  overflow: auto;
+  transition: transform 0.5s ease-in-out;
+  ul {
+    display: block !important;
+  }
+  li {
+    list-style: none;
+    cursor: pointer;
+    margin: 2rem 0 1.2rem 0 !important;
+    a {
+      color: #fff !important;
+    }
+  }
+}
 @mixin row($breakpoint) {
   @include flex;
   @media screen and #{inspect(breakpoint($breakpoint))} {
@@ -55,7 +79,7 @@
 @mixin responsive($property, $value, $breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media screen and #{inspect(breakpoint($breakpoint))} {
-      #{$property}: $value;
+      #{$property}: $value !important;
     }
   } @else {
     @warn "No value could be retrieved from `#{$breakpoint}`. "

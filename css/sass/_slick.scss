@@ -10,6 +10,8 @@
   .slick-slide {
     position: relative;
     height: 70vh !important;
+    // @include responsive(height, 40vh, ipad_pro);
+    // @include responsive(height, 60vh, ipad);
     img {
       width: 100%;
       height: 100%;

@@ -11,6 +11,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none !important;
@@ -41,6 +42,26 @@ header {
     color: color(light);
     text-decoration: none;
   }
+  .menu-toggle {
+    display: none;
+    @include responsive(display, block, ipad);
+  }
+  .mobile-menu {
+    .sidemenu_toggle {
+      display: none;
+    }
+    @include media(ipad) {
+      .sidemenu-toggle {
+        display: block;
+        @include absolute_position(1rem, 20%, '', '');
+      }
+      @include slide_menu;
+    }
+  }
+}
+
+.motion-in {
+  transform: translateX(0) !important;
 }
 
 ul {
@@ -51,11 +72,29 @@ ul {
   padding-top: 20px;
   text-align: center;
 }
-h2 {
-  font-family: sans-serif;
-  color: #fff;
+
+// BANNER/SLIDER SECTION
+.banner {
+  @include row(ipad);
+  @include media(ipad) {
+    img {
+      display: none !important;
+    }
+    .slide-1 {
+      background: url(/img/banners/mountain1.jpg);
+    }
+    .slide-2 {
+      background: url(/img/banners/mountain2.jpg);
+    }
+    .slide-1,
+    .slide-2 {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 .slider {
+  @include responsive(width, 100%, ipad);
   .text {
     @include absolute-position(0, 0, 0, 0);
     @include flex-x-center;
@@ -71,6 +110,8 @@ h2 {
   padding: 3rem 2rem 2rem 2rem;
   height: 70vh !important;
   overflow: scroll;
+  @include responsive(width, 100%, ipad);
+  @include responsive(height, auto, ipad);
   li a,
   h6 {
     color: color(grey-500);
@@ -79,11 +120,12 @@ h2 {
   }
   h6 {
     padding: 0.375rem 0;
-  }
-  .selected {
-    background: color(light-green);
-    margin-left: 0.7rem;
-    padding: 0.375rem 0.5rem;
+    &:hover,
+    &.selected {
+      background: color(light-green);
+      margin-left: 0.7rem;
+      padding: 0.375rem 0.5rem;
+    }
   }
 }
 
@@ -91,6 +133,7 @@ h2 {
 .cards {
   @include container;
   @include row(tablet);
+  flex-wrap: wrap;
   justify-content: space-between;
   cursor: pointer;
   a {
@@ -105,7 +148,9 @@ h2 {
     width: 23%;
     position: relative;
     @include flex-y-between;
+    @include responsive(width, 47%, ipad);
     @include responsive(width, 100%, tablet);
+    @include responsive(margin-bottom, 2rem, ipad);
     &:hover,
     &:nth-child(3) {
       background: none !important;
@@ -165,6 +210,9 @@ h2 {
 }
 
 //EXPANDING FORM
+.form-container {
+  padding: 0 10%;
+}
 .hide {
   display: none !important;
 }
@@ -211,5 +259,92 @@ h2 {
     .checkbox__input input:checked + .checkbox__control svg {
       transform: scale(1);
     }
+  }
+}
+
+// SEARCH SECTION
+.row--search {
+  @include media(tablet) {
+    .d-flex {
+      justify-content: space-between;
+    }
+    .basic-search,
+    .detail-search {
+      width: 48%;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.loader {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.loader1 {
+  display: inline-block;
+  font-size: 0px;
+  padding: 0px;
+}
+.loader1 span {
+  vertical-align: middle;
+  border-radius: 100%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 2px;
+  -webkit-animation: loader1 0.8s linear infinite alternate;
+  animation: loader1 0.8s linear infinite alternate;
+}
+.loader1 span:nth-child(1) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: #0fb78d;
+}
+.loader1 span:nth-child(2) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: #569c73;
+}
+.loader1 span:nth-child(3) {
+  -webkit-animation-delay: -0.26666s;
+  animation-delay: -0.26666s;
+  background: #000;
+}
+.loader1 span:nth-child(4) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: #000;
+}
+.loader1 span:nth-child(5) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: #d2f5d9;
+}
+
+@keyframes loader1 {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes loader1 {
+  from {
+    -webkit-transform: scale(0, 0);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
   }
 }
