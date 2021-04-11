@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
 
-    <title>Front End Dev Test</title>
-    <meta
-      name="description"
-      content="A test for the front end developer role"
-    />
-    <meta name="author" content="Swillis" />
+    <title>Senior Internet</title>
+    <meta name="description" content="Senior Internet" />
+    <meta name="author" content="Harrison" />
 
     <link
       rel="icon"
@@ -18,7 +15,7 @@
       href="https://www.senior.co.uk/AppImages/senior_logo_small.svg"
     />
 
-    <link rel="stylesheet" href="css/site-main.css" />
+    <link rel="stylesheet" href="css/sass/site-main.css" />
 
     <!-- SLICK DNS -->
     <link
@@ -59,27 +56,35 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./js/app.js"></script>
   </head>
 
   <body>
-    <header class="bg-black">
-      <img
-        src="https://www.senior.co.uk/AppImages/senior_logo_small.svg"
-        alt="Header Logo"
-      />
+    <header class="bg-white">
+      <img src="./img/logo.svg" alt="Header Logo" />
       <nav class="dynamic-callout mobile-menu">
         <ul class="d-flex list-unstyled mb-0">
           <li class="sidemenu-toggle text-white cursor menu-toggle">
             <i class="fas fa-times text-wite font-24"></i>
           </li>
           <li>
-            <a href="#" class="text-white font-14 text-uppercase">Home</a>
+            <a href="#" class="">Navigation</a>
           </li>
           <li class="mx-4">
-            <a href="#" class="font-14 text-white text-uppercase">About</a>
+            <a href="#" class="">Navigation</a>
           </li>
           <li>
-            <a href="#" class="text-white font-14 text-uppercase">Contact</a>
+            <a href="#" class="">Navigation</a>
+          </li>
+          <li class="mx-4">
+            <a href="#" class="">Navigation</a>
+          </li>
+          <li>
+            <a href="#" class="">Navigation</a>
+          </li>
+          <li class="ml-4">
+            <a href="#" class="">0115 838 9555</a>
           </li>
         </ul>
       </nav>
@@ -87,437 +92,83 @@
     </header>
 
     <div class="banner">
-      <div class="slider col-3of4 position-relative">
-        <div class="dynamic-callout position-relative slide-1">
-          <div class="text">
-            <h2
-              class="font-54 text-white font-weight-bold text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Big Mountain
-            </h2>
+      <div class="banner__text position-relative">
+        <div class="banner__text__card">
+          <p class="mb-4 font-14">We thought about everything to</p>
+          <h6 class="weight-600 text-lowercase mb-5">
+            Grow your <br />
+            not-for-proﬁt <br />
+            organisation
+          </h6>
+          <div class="buttons d-flex">
+            <button class="btn primary">See solutions</button>
+            <button class="btn primary ml-3">How we do it</button>
           </div>
-          <img src="img/banners/mountain1.jpg" alt="Big Mountain" />
-        </div>
-        <div class="dynamic-callout position-relative slide-2">
-          <div class="text">
-            <h2
-              class="font-54 text-white font-weight-bold text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Snowy Mountain
-            </h2>
-          </div>
-          <img src="img/banners/mountain2.jpg" alt="Snowy Mountain" />
         </div>
       </div>
-
-      <div class="col-1of4 menu">
-        <h1
-          class="font-wight-cold font-32"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          A bunch of things
-        </h1>
-        <div class="super-nav dynamic-callout">
-          <nav>
-            <ul class="pl-0" data-aos="fade-up" data-aos-delay="100">
-              <li>
-                <h6>
-                  <a href="#">Colours</a>
-                </h6>
-                <ul>
-                  <li><a href="#">Red</a></li>
-                  <li><a href="#">Blue</a></li>
-                  <li><a href="#">Green</a></li>
-                </ul>
-              </li>
-              <li>
-                <h6 class="selected">
-                  <a href="#">Shapes</a>
-                </h6>
-                <ul>
-                  <li><a href="#">Square</a></li>
-                  <li><a href="#">Triangle</a></li>
-                  <li><a href="#">Circle</a></li>
-                </ul>
-              </li>
-              <li>
-                <h6>
-                  <a href="#">Numbers</a>
-                </h6>
-                <ul>
-                  <li><a href="#">Fifteen</a></li>
-                  <li><a href="#">Sixteen</a></li>
-                  <li><a href="#">Seventeen</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="banner__image">
+        <img src="../../img/banners/banner-photo.svg" alt="" />
       </div>
     </div>
 
-    <div class="cards my-4 bg-grey-100">
-      <div class="dynamic-callout bg-white">
-        <div>
-          <a
-            href="img/puppies/puppy-cup.jpeg"
-            class="fancybox"
-            data-fancybox="img"
-          >
-            <img
-              src="img/puppies/puppy-cup.jpeg"
-              alt="Puppy in a cup"
-              data-aos="fade-up"
-              data-aos-delay="0"
-            />
-          </a>
-          <img
-            src="./img/icons/paw.svg"
-            class="watermark"
-            alt=""
-            data-aos="fade-up"
-            data-aos-delay="0"
-          />
-          <div class="card-body">
-            <h5
-              class="text-center font-weight-bold font-24"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Puppy in a cup
-            </h5>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Lorem ipsum dolor sit amet, eam modo altera ea, nec cu animal
-              latine partiendo. Populo scripserit repudiandae ad mei, ut per
-              commune neglegentur.
-            </p>
-          </div>
+    <div class="features">
+      <div class="row mb-2 justify-content-between features__intro">
+        <div class="col-md-6 mb-2 pl-0 weight-600 text-black font-30">
+          Focus on what’s important - <br />
+          running the organisation
         </div>
-        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
-          >View</a
-        >
-      </div>
-      <div class="dynamic-callout bg-white">
-        <div>
-          <a
-            href="img/puppies/puppy-sleep.jpg"
-            class="fancybox"
-            data-fancybox="img"
-          >
-            <img
-              src="img/puppies/puppy-sleep.jpg"
-              alt="Sleeping Puppy"
-              data-aos="fade-up"
-              data-aos-delay="0"
-          /></a>
-          <img
-            src="./img/icons/paw.svg"
-            class="watermark"
-            alt=""
-            data-aos="fade-up"
-            data-aos-delay="0"
-          />
-          <div class="card-body">
-            <h5
-              class="text-center font-weight-bold font-24"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Sleeping Puppy
-            </h5>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Lorem ipsum dolor sit amet, eam prompta bonorum et, quod menandri
-              his no.
-            </p>
-          </div>
-        </div>
-        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
-          >View</a
-        >
-      </div>
-      <div class="dynamic-callout bg-white">
-        <div>
-          <a
-            href="img/puppies/puppy-fluffy.jpeg"
-            class="fancybox"
-            data-fancybox="img"
-          >
-            <img
-              src="img/puppies/puppy-fluffy.jpeg"
-              alt="Fluffy Puppy"
-              data-aos="fade-up"
-              data-aos-delay="0"
-            />
-          </a>
-          <img
-            src="./img/icons/paw.svg"
-            class="watermark"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            alt=""
-          />
-          <div class="card-body">
-            <h5
-              class="text-center font-24 font-weight-bold"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Fluffy Puppy
-            </h5>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Lorem ipsum dolor sit amet, et eam tantas ancillae, te luptatum
-              legendos est. Ad argumentum liberavisse sea, ex aliquid patrioque
-              pro.
-            </p>
-          </div>
-        </div>
-        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
-          >View</a
-        >
-      </div>
-      <div class="dynamic-callout bg-white">
-        <div>
-          <a
-            href="img/puppies/puppy-stare.jpg"
-            class="fancybox"
-            data-fancybox="img"
-          >
-            <img
-              src="img/puppies/puppy-stare.jpg"
-              alt="Puppy Stare"
-              data-aos="fade-up"
-              data-aos-delay="0"
-            />
-          </a>
-          <img
-            src="./img/icons/paw.svg"
-            class="watermark"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            alt=""
-          />
-          <div class="card-body">
-            <h5
-              class="text-center font-weight-bold font-24"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Puppy Stare
-            </h5>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Lorem ipsum dolor sit amet, eam prompta bonorum et, quod menandri
-              his no.
-            </p>
-          </div>
-        </div>
-        <a href="#" class="button" data-aos="fade-up" data-aos-delay="200"
-          >View</a
-        >
-      </div>
-    </div>
-
-    <div class="form-container">
-      <div class="text-center mb-4">
-        <a
-          class="js-show-form button bg-grey-400 text-white px-2 py-1 text-uppercase cursor"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          >Expand Form</a
-        >
-      </div>
-      <div class="expanding-form" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="dynamic-callout col-md-7 m-auto">
-            <form>
-              <div class="form_field form-group row">
-                <label for="formName" class="col-sm-3 text-grey">Name:</label>
-                <input
-                  class="col-sm-9 border-none bg-grey-100"
-                  id="formName"
-                  type="text"
-                  name=""
-                />
-              </div>
-              <div class="form_field form-group row">
-                <label for="formEmail" class="col-sm-3 text-grey">Email:</label>
-                <input
-                  class="col-sm-9 border-none bg-grey-100"
-                  id="formEmail"
-                  type="email"
-                  name=""
-                />
-              </div>
-              <div class="form_field form-group row mb-4">
-                <label for="formText" class="col-sm-3 text-grey">Name:</label>
-                <textarea
-                  class="col-sm-9 border-none bg-grey-100"
-                  id="formText"
-                  name=""
-                ></textarea>
-              </div>
-              <div class="form_field form-group row">
-                <label class="col-sm-3 text-grey">Please select:</label>
-                <div class="col-sm-9 px-0">
-                  <label class="checkbox_field checkbox">
-                    <span class="checkbox__input">
-                      <input id="checkbox1" type="checkbox" name="" />
-                      <span class="checkbox__control">
-                        <svg
-                          xmlns="https://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                    <label for="checkbox1">Lorem ipsum 1</label>
-                  </label>
-
-                  <label class="checkbox_field checkbox">
-                    <span class="checkbox__input">
-                      <input id="checkbox2" type="checkbox" name="" />
-                      <span class="checkbox__control">
-                        <svg
-                          xmlns="https://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                    <label for="checkbox2">Lorem ipsum 2</label>
-                  </label>
-
-                  <label class="checkbox_field checkbox">
-                    <span class="checkbox__input">
-                      <input id="checkbox3" type="checkbox" name="" />
-                      <span class="checkbox__control">
-                        <svg
-                          xmlns="https://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                    <label for="checkbox3">Lorem ipsum 3</label>
-                  </label>
-
-                  <label class="checkbox_field checkbox">
-                    <span class="checkbox__input">
-                      <input id="checkbox4" type="checkbox" name="" />
-                      <span class="checkbox__control">
-                        <svg
-                          xmlns="https://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                    <label for="checkbox4">Lorem ipsum 4</label>
-                  </label>
-
-                  <label class="checkbox_field checkbox">
-                    <span class="checkbox__input">
-                      <input id="checkbox5" type="checkbox" name="" />
-                      <span class="checkbox__control">
-                        <svg
-                          xmlns="https://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                    <label for="checkbox5">Lorem ipsum 5</label>
-                  </label>
-                </div>
-              </div>
-              <div class="form_field">
-                <input
-                  class="button bg-grey-400 text-white border-default px-2 py-1"
-                  type="submit"
-                  value="SUBMIT"
-                  name=""
-                />
-              </div>
-            </form>
-          </div>
+        <div class="col-md-6 pr-0 mb-2 text-grey">
+          <p class="mb-0">
+            Edolor sit amet, cons ectetuer adipiscing elit, sed <br />
+            diam nonummy nibh euismod tincidunt ut laoreet <br />
+            dolore magna aliquam erat volutpat.
+          </p>
         </div>
       </div>
-
-      <div class="row--search row--pad row my-4">
-        <div class="col-md-7 m-auto row px-0">
-          <div class="col-sm-9 ml-auto d-flex px-0">
-            <div class="basic-search">
-              <input
-                type="text"
-                class="border-grey text-grey"
-                name=""
-                placeholder="dsads"
-              />
-            </div>
-            <div class="detail-search ml-2">
-              <input
-                type="text"
-                class="border-default text-grey bg-grey-300"
-                name=""
-                placeholder="Detail Search"
-              />
-            </div>
-          </div>
+      <div class="features__slider mb-4 row">
+        <div class="features__card">
+          <div class="features__circle mb-3"></div>
+          <h6 class="font-14 weight-700 mb-3">Grow sales and revenue</h6>
+          <p class="font-12">
+            Grow sales and revenue Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Suspendisse a purus rutrum,
+          </p>
+        </div>
+        <div class="features__card">
+          <div class="features__circle mb-3"></div>
+          <h6 class="font-14 weight-700 mb-3">Create a beautiful website</h6>
+          <p class="font-12">
+            Create a beautiful website Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Suspendisse a purus rutrum,
+          </p>
+        </div>
+        <div class="features__card">
+          <div class="features__circle mb-3"></div>
+          <h6 class="font-14 weight-700 mb-3">Automate recurring tasks</h6>
+          <p class="font-12">
+            Automate recurring tasks Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Suspendisse a purus rutrum,
+          </p>
+        </div>
+        <div class="features__card">
+          <div class="features__circle mb-3"></div>
+          <h6 class="font-14 weight-700 mb-3">Get the analytics you need</h6>
+          <p class="font-12">
+            Get the analytics you need Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Suspendisse a purus rutrum,
+          </p>
+        </div>
+        <div class="features__card">
+          <div class="features__circle mb-3"></div>
+          <h6 class="font-14 weight-700 mb-3">Get the analytics you need</h6>
+          <p class="font-12">
+            Get the analytics you need Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Suspendisse a purus rutrum,
+          </p>
         </div>
       </div>
-    </div>
-
-    <div class="loader" id="appLoader">
-      <div class="loader1">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="d-flex justify-content-center">
+        <button class="btn primary">See solutions</button>
       </div>
     </div>
 

@@ -3,9 +3,14 @@
 .bg-grey-100 {
   background: color(grey-100);
 }
-
+.bg-white {
+  background: color(light);
+}
 .bg-grey-300 {
   background: color(grey-300);
+}
+.bg-alt-primary {
+  background: color(alt-primary);
 }
 .bg-grey-400 {
   background: color(grey-400);
@@ -14,7 +19,9 @@
 .bg-black {
   background: color(_black);
 }
-
+.text-black {
+  color: color(_black);
+}
 .text-grey {
-  color: color(grey-500);
+  color: color(_grey100);
 }

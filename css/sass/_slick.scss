@@ -50,15 +50,15 @@ button {
     }
     &::after {
       content: '';
-      @include absolute-position(-2px, -3px, -2px, -1px);
+      @include position(absolute, -2px, -3px, -2px, -1px);
       border: 1px solid color(light);
       border-radius: 50%;
     }
   }
   &.slick-prev {
-    @include absolute-position(95%, '', '', 2rem);
+    @include position(absolute, 95%, '', '', 2rem);
   }
   &.slick-next {
-    @include absolute-position(95%, 2rem, '', '');
+    @include position(absolute, 95%, 2rem, '', '');
   }
 }

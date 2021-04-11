@@ -19,3 +19,7 @@
 @function breakpoint($key) {
   @return map-get($breakpoints, $key);
 }
+
+@function rem($val) {
+  @return $val / 20 + rem;
+}
