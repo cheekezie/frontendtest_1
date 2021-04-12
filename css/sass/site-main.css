@@ -139,6 +139,10 @@ textarea.border-default {
   }
 }
 
+.bg-grey-100 {
+  background: #666666;
+}
+
 .bg-white {
   background: #fff;
 }
@@ -307,7 +311,6 @@ header img {
 header a,
 header a:link,
 header a:active {
-  color: #666666;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -458,12 +461,8 @@ ul {
 }
 
 .features__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0 9.5rem;
+  margin-top: 2.5rem;
 }
 
 .features .slick-track {
@@ -473,13 +472,34 @@ ul {
 }
 
 .features__card {
-  width: 200px !important;
+  text-align: center;
+}
+
+.features__card:not(:first-of-type), .features__card:not(:last-of-type) {
+  padding: 0 0.5rem;
+}
+
+.features__card:first-of-type {
+  padding-right: 1rem;
+}
+
+.features__card:last-of-type {
+  padding-left: 1rem;
+}
+
+.features__card p {
+  color: #666666;
+}
+
+.features__card h6 {
+  text-align: center;
 }
 
 .features__circle {
-  width: 140 !important;
-  height: 140 !important;
+  width: 7rem !important;
+  height: 7rem !important;
   background: #f2f2f2;
+  border-radius: 50%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -493,9 +513,38 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
 }
 
 .features h6 {
   line-height: 40px;
+}
+
+.chat-widget {
+  background: transparent -webkit-gradient(linear, right top, left top, from(#b1d235), color-stop(70%, #006a78), to(#006a78)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #b1d235 0%, #006a78 70%, #006a78 100%) 0% 0% no-repeat padding-box;
+  width: 9.8rem !important;
+  height: 3.25rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: fixed;
+  top: 47% !important;
+  right: -52.5px !important;
+  bottom: "";
+  left: "" !important;
+  -webkit-box-shadow: -3px -3px 8px #0000001a;
+          box-shadow: -3px -3px 8px #0000001a;
+  padding: 0.6rem 0.85rem;
+}
+
+.chat-widget span {
+  white-space: pre;
 }
 /*# sourceMappingURL=site-main.css.map */

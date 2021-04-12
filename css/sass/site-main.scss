@@ -126,31 +126,54 @@ ul {
     }
   }
   &__slider {
-    display: flex;
-    justify-content: space-between;
+    padding: 0 rem(190);
+    margin-top: 2.5rem;
   }
   .slick-track {
     display: flex !important;
   }
   &__card {
-    width: 200px !important;
-    // &:not(:first-of-type),
-    // &:not(:last-of-type) {
-    //   padding: 0 1rem;
-    // }
-    // &:first-of-type {
-    //   padding-right: 2rem;
-    // }
-    // &:last-of-type {
-    //   padding-left: 2rem;
-    // }
+    &:not(:first-of-type),
+    &:not(:last-of-type) {
+      padding: 0 0.5rem;
+    }
+    &:first-of-type {
+      padding-right: 1rem;
+    }
+    &:last-of-type {
+      padding-left: 1rem;
+    }
+    p {
+      color: color(grey-100);
+    }
+    text-align: center;
+    h6 {
+      text-align: center;
+    }
   }
   &__circle {
-    @include image-size(140, 140);
+    @include image-size(rem(140), rem(140));
     background: color(grey-200);
+    border-radius: 50%;
     @include flex-y-center-center;
+    margin: auto;
   }
   h6 {
     line-height: 40px;
+  }
+}
+
+.chat-widget {
+  @include card-gradient;
+  @include image-size(rem(196), rem(65));
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  transform: rotate(90deg);
+  @include position(fixed, 47%, -52.5px, '', '');
+  box-shadow: -3px -3px 8px #0000001a;
+  padding: rem(12) rem(17);
+  span {
+    white-space: pre;
   }
 }
